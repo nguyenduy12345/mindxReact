@@ -103,6 +103,7 @@
 //     }
 //     result.push(person)
 // },{})
+// console.log(employees)
 // console.log(result)
 
 // Bai 13: 
@@ -137,7 +138,7 @@
 // console.log(tasks)
 
 
-//13.3
+// 13.3
 // let sortA_Z = "Sắp xếp theo chiều A - Z"
 // let sortZ_A = "Sắp xếp theo chiều Z - A"
 // function sortName(type){
