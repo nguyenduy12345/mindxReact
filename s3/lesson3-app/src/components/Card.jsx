@@ -1,129 +1,94 @@
-import img001 from '../assets/IMG/001.png'
 import './card.css'
-
 const listItem =[
     {
-        src: img001,
+        src: "./IMG/001.png",
         id: "#0001",
         name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        property: ["Grass", "Poison"]
     },
     {
-        src: img001,
+        src: "./IMG/002.png",
         id: "#0002",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Ivysaur",
+        property: ["Grass", "Poison"]
+
     },
     {
-        src: img001,
+        src: "./IMG/003.png",
         id: "#0003",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Venusaur",
+        property: ["Grass", "Poison"]
     },
     {
-        src: img001,
+        src: "./IMG/004.png",
         id: "#0004",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Charmander",
+        property: ["Fire"]
+
     },
     {
-        src: img001,
+        src: "./IMG/005.png",
         id: "#0005",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Charmeleon",
+        property: ["Fire"]
     },
     {
-        src: img001,
+        src: "./IMG/006.png",
         id: "#0006",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Charizard",
+        property: ["Fire", "Flying"]
     },
     {
-        src: img001,
+        src: "./IMG/007.png",
         id: "#0007",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Squirtle",
+        property: ["Water"]
     },
     {
-        src: img001,
+        src: "./IMG/008.png",
         id: "#0008",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Wartortle",
+        property: ["Water"]
+
     },
     {
-        src: img001,
+        src: "./IMG/009.png",
         id: "#0009",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Blastoise",
+        property: ["Water"]
     },
     {
-        src: img001,
+        src: "./IMG/010.png",
         id: "#0010",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
+        name: "Caterpie",
+        property: ["Bug"]
+
     },
     {
-        src: img001,
+        src: "./IMG/011.png",
         id: "#0011",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
-    },
-    {
-        src: img001,
-        id: "#0012",
-        name: "Bulbasaur",
-        attribute: {
-            attr1: "Grass",
-            attr2: "Poison"
-        }
-    },
+        name: "Metapod", property: ["Bug"]},
+    {src: "./IMG/012.png",id: "#0012",name: "Butterfree",property: ["Bug", "Flying"]},
+    { id: "#0013", name: "Weedle", property: ["Bug", "Poison"], src: "./IMG/013.png" },
+    { id: "#0014", name: "Kakuna", property: ["Bug", "Poison"], src: "./IMG/014.png" },
+    { id: "#0015", name: "Beedrill", property: ["Bug", "Poison"], src: "./IMG/015.png"},
+    { id: "#0016", name: "Beedrill", property: ["Bug", "Poison"], src: "./IMG/015-Mega.png"}
+
 ]
 function Card(){
     return (
         <>
-            {listItem.map(item => (
-                <div className="card">
+            {listItem.map((item, index)=> (
+                <div key={index} className="card" onClick={() => alert(`${item.name} xin chào`)}>
                     <div className="item">
                         <img src={item.src}/>
                         <div className="item_desc">
                             <p>{item.id}</p>
                             <h3>{item.name}</h3>
                             <div className="attribute_item">
-                                <button class="btn_1">{item?.attribute?.attr1}</button>
-                                <button class="btn_2">{item?.attribute?.attr2}</button>
+                                {item.property.map((prop, index) => (
+                                    <button key={index} className={prop}>{prop}</button>
+                                ))}
                             </div>
                         </div>
                     </div>

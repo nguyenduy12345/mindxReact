@@ -1,0 +1,56 @@
+.box_modal{
+    position: fixed;
+    left: calc(50% - 300px);
+    top: calc(50% - 250px);
+    width: 600px;
+    border: 1px solid black;
+    background: rgb(187, 219, 172);
+}
+.header_modal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+.header_modal h3{
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.header_modal p{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container_modal{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_modal{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+.footer_modal button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer_modal .btn_1{
+    background-color: yellow;
+    margin-right: 5px;
+    color: black;
+}
+.footer_modal .btn_2{
+    background-color: blue;
+}

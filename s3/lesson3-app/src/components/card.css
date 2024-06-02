@@ -11,7 +11,6 @@
 }
 .card:hover{
     border: 1px solid yellow;
-    /* box-shadow: 2px 3px yellow; */
 }
 .item img{
     background-color: #dbe6e7;
@@ -47,12 +46,28 @@
     border: none;
     cursor: pointer;
 }
-.item .attribute_item .btn_1{
+.item .attribute_item .Grass{
     background: #33FF99;
     color: black;
 }
-.item .attribute_item .btn_2{
+.item .attribute_item .Poison{
     background: pink;
+    color: white;
+}
+.item .attribute_item .Fire{
+    background-color: orange;
+    color: white;
+}
+.item .attribute_item .Flying{
+    background: linear-gradient(180deg, hsla(211, 50%, 42%, 1) 20%, hsla(295, 94%, 76%, 1) 100%);
+    color: white;
+}
+.item .attribute_item .Water{
+    background-color: rgb(105, 105, 227);
+    color: white;
+}
+.item .attribute_item .Bug{
+    background-color: brown;
     color: white;
 }
 @media (max-width: 568px) {

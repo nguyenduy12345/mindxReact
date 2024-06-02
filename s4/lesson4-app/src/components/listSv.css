@@ -1,0 +1,22 @@
+.item{
+    display: flex;
+    margin-bottom: 10px;
+}
+.item_number{
+    font-size: 50px;
+    font-weight: 800;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.item_des{
+    border-bottom: 1px solid black;
+    width: 90%;
+    line-height: 25px;
+    cursor: pointer;
+}
