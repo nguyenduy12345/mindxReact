@@ -1,0 +1,118 @@
+.box_modal{
+    position: fixed;
+    left: calc(50% - 300px);
+    top: calc(50% - 250px);
+    width: 600px;
+    border: 1px solid black;
+    background: white;
+}
+.header_modal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+.header_modal h3{
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.header_modal p{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container_modal{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    height: 220px;
+    display: flex;
+}
+.container_modal .img_modal{
+    width: 40%;
+}
+.container_modal .img_modal img{
+    width: 100%;
+    height: 100%;
+}
+.container_modal .description{
+    margin-left: 10px;
+    padding: 20px;
+}
+.container_modal .description h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.container_modal .description p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.container_modal .description label{
+    cursor: pointer;
+}
+.container_modal .description input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 25px;
+}
+.container_modal .description button{
+    width: 43%;
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.container_modal .description .Grass{
+    background: #33FF99;
+    color: black;
+}
+.container_modal .description .Poison{
+    background: pink;
+    color: white;
+}
+.container_modal .description .Fire{
+    background-color: orange;
+    color: white;
+}
+.container_modal .description .Flying{
+    background: linear-gradient(180deg, hsla(211, 50%, 42%, 1) 20%, hsla(295, 94%, 76%, 1) 100%);
+    color: white;
+}
+.container_modal .description .Water{
+    background-color: rgb(105, 105, 227);
+    color: white;
+}
+.container_modal .description .Bug{
+    background-color: brown;
+    color: white;
+}
+
+.footer_modal{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+.footer_modal button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer_modal .btn_1{
+    background-color: yellow;
+    margin-right: 5px;
+    color: black;
+}
+.footer_modal .btn_2{
+    background-color: blue;
+}

@@ -26,13 +26,18 @@ const listSv = [
 
 function App() {
   const [openModal, setOpenModal] = React.useState(false)
+  const [listPerson, setListPerson] = React.useState(listSv)
+  const [curInfo, setCurInfo] = React.useState(null)
+  function handleCurInfo(item){
+    setCurInfo(item)
+    setOpenModal(true)
+  }
   return (
     <>
-      <button onClick={() => setOpenModal(true)} style={{marginLeft: "40%"}}>Open Modal</button>
-      {openModal && <Modal closeModal={setOpenModal} />}
+      {openModal && <Modal data={curInfo} closeModal={setOpenModal} />}
       <div className="list_people">
-        {listSv.map((item, index) =>(
-          <ListSv key={index} id={item.id} name={item.name} money={item.money} notes={item.notes} />
+        {listPerson.map((item, index) =>(
+          <ListSv key={index} handleCurInfo={() => handleCurInfo(item)} setModal={setOpenModal} id={item.id} name={item.name} money={item.money} notes={item.notes} />
         ))}
       </div>
     </>

@@ -1,5 +1,6 @@
 import './card.css'
-const listItem =[
+import React from 'react'
+const listItemPokemon =[
     {
         src: "./IMG/001.png",
         id: "#0001",
@@ -75,7 +76,10 @@ const listItem =[
     { id: "#0016", name: "Beedrill", property: ["Bug", "Poison"], src: "./IMG/015-Mega.png"}
 
 ]
+
+
 function Card(){
+    const [listItem, setListItem] = React.useState([listItemPokemon])
     return (
         <>
             {listItem.map((item, index)=> (

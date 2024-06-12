@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    gap: 29px;
+}
+img{
+    cursor: pointer;
+}
+body{
+    background-color: #192026;
+}
+a{
+    text-decoration: none;
+}

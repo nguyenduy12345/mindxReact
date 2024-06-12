@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 24%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.card:hover{
+    border: 1px solid yellow;
+}
+.item img{
+    background-color: #dbe6e7;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.item .item_desc{
+    padding: 0 15px;
+}
+.item p{
+    color: gray;
+    font-size: 17px;
+    margin-top: 5px;
+}
+.item h3{
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+.item .attribute_item{
+    margin-top: 15px;
+}
+.item .attribute_item button{
+    width: 43%;
+    height: 30px;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.item .attribute_item .Grass{
+    background: #33FF99;
+    color: black;
+}
+.item .attribute_item .Poison{
+    background: pink;
+    color: white;
+}
+.item .attribute_item .Fire{
+    background-color: orange;
+    color: white;
+}
+.item .attribute_item .Flying{
+    background: linear-gradient(180deg, hsla(211, 50%, 42%, 1) 20%, hsla(295, 94%, 76%, 1) 100%);
+    color: white;
+}
+.item .attribute_item .Water{
+    background-color: rgb(105, 105, 227);
+    color: white;
+}
+.item .attribute_item .Bug{
+    background-color: brown;
+    color: white;
+}
+@media (max-width: 568px) {
+    .card{
+        width: 100%;
+    }
+}
+@media (min-width: 568px) {
+    .card{
+        width: 49%;
+    }
+}
+@media (min-width: 768px) {
+    .card{
+        width: 32%;
+    }
+}
+@media (min-width: 992px) {
+    .card{
+        width: 24%;
+    }
+}
+
+
+

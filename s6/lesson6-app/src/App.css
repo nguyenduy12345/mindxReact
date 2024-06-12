@@ -1,0 +1,22 @@
+body{
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.list_item{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    margin: 10px;
+}
+input[type="checkbox"]{
+    margin-left: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* .filter_item input[type="checkbox"]{
+    display: block;
+} */
+

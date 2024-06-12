@@ -1,0 +1,27 @@
+.web_body{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 15px 83px;
+}
+h3.title_status{
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+.question{
+    font-size: 22px;
+    font-weight: 400;
+    color: #868686;
+    margin-top: 20px;
+}
+.list_movie{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+h3.title_list{
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}

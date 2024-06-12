@@ -1,0 +1,91 @@
+.banner{
+    width: 100%;
+    margin-top: 29px;
+}
+.status .movie_card{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+
+}
+.status .movie_card .img_card, img{
+    width: 200px;
+    height: 253.84px;
+}
+.status .movie_card p.movie_epi{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 129px;
+    height: 21px;
+}
+.status p.movie_des{
+    font-size: 16px;
+    font-weight: 600;
+}
+.status h3.name_movie{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+    width: 129px;
+    height: 21px;
+}
+.status .movie_card .infomation_movie{
+    line-height: 20px;
+    width: 70%;
+    padding: 15px 0;
+}
+.status .movie_card .infomation_movie p{
+    width: 100%;
+    margin: 10px 0;
+}
+.status .movie_card .infomation_movie p.movie_des{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.status .movie_card .infomation_movie h3{
+    width: 100%;
+    margin-top: 0;
+    font-size: 25px;
+}
+.banner_box{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.banner_box::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    content: "";
+    background: linear-gradient(90deg, rgba(29,29,29,0.8) 0%, rgba(232,222,222,0) 85%);
+}
+.banner_box img.banner_img{
+    width: 100%;
+    height: 400px;
+}
+.banner_des{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    background-color: none;
+    z-index: 999;
+}
+.title_des{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.description{
+    color: white;
+    width: 440px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}

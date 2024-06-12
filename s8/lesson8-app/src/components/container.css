@@ -1,0 +1,45 @@
+.item_card{
+    width: 170px;
+    height: 305.87px;
+    border-radius: 12px;
+    position: relative;
+}
+.item_card::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 305.87px;
+    content: "";
+    z-index: 99;
+    background: linear-gradient(0deg, rgba(29,29,29,0.9949229691876751) 22%, rgba(250,239,239,0) 47%);
+    cursor: pointer;
+}
+.item_card .img_card{
+    width: 100%;
+    height: 253.84px;
+}
+.info_movie{
+    position: absolute;
+    width: 129px;
+    text-align: center;
+    left: 9px;
+    bottom: 20px;
+    z-index: 999;
+}
+p.movie_des{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 129px;
+    height: 21px;
+}
+h3.name_movie{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+    width: 129px;
+    height: 21px;
+}
+
