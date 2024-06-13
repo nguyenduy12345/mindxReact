@@ -7,13 +7,16 @@
 .item_card::before{
     position: absolute;
     left: 0;
-    bottom: 0;
+    top:0;
     width: 100%;
-    height: 305.87px;
+    height: 253.84px;
     content: "";
     z-index: 99;
-    background: linear-gradient(0deg, rgba(29,29,29,0.9949229691876751) 22%, rgba(250,239,239,0) 47%);
+    background: linear-gradient(0deg, rgba(29,29,29,0.97) 5%, rgba(250,239,239,0) 47%);
     cursor: pointer;
+}
+.item_card:hover{
+    opacity: 0.7;
 }
 .item_card .img_card{
     width: 100%;
@@ -21,17 +24,16 @@
 }
 .info_movie{
     position: absolute;
-    width: 129px;
+    width: 169px;
     text-align: center;
-    left: 9px;
-    bottom: 20px;
+    bottom: 0px;
     z-index: 999;
 }
 p.movie_des{
     font-size: 16px;
     font-weight: 400;
     color: white;
-    width: 129px;
+    width: 169px;
     height: 21px;
 }
 h3.name_movie{
@@ -39,7 +41,7 @@ h3.name_movie{
     font-weight: 600;
     color: white;
     margin-top: 20px;
-    width: 129px;
-    height: 21px;
+    width: 169px;
+    height: 42.83px;
 }
 
