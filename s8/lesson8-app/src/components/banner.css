@@ -34,7 +34,8 @@
 .status .movie_card .infomation_movie{
     line-height: 20px;
     width: 70%;
-    padding: 15px 0;
+    /* padding: 15px 0; */
+    margin-left: 29px;
 }
 .status .movie_card .infomation_movie p{
     width: 100%;
